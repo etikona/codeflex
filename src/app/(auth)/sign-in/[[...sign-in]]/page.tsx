@@ -1,9 +1,9 @@
-import React from "react";
+import { SignIn } from "@clerk/nextjs";
 
 const SignInPage = () => {
   return (
-    <div>
-      <h3>Sign In Page</h3>
+    <div className="flex h-screen w-full items-center justify-center">
+      <SignIn />
     </div>
   );
 };
