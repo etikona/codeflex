@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import UserPrograms from "@/components/UserPrograms";
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
-
+import hero from "../../public/hero-ai2.png";
+import Image from "next/image";
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen text-foreground overflow-hidden">
@@ -94,8 +95,8 @@ const HomePage = () => {
               {/* IMAGE CONTANINER */}
               <div className="relative aspect-square max-w-lg mx-auto">
                 <div className="relative overflow-hidden rounded-lg bg-cyber-black">
-                  <img
-                    src="/hero-ai3.png"
+                  <Image
+                    src={hero}
                     alt="AI Fitness Coach"
                     className="size-full object-cover object-center"
                   />
